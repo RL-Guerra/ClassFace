@@ -4,99 +4,96 @@
 
 1.1 Visão Geral
 
-O ClassFace é um sistema de chamada automática para salas de aula baseado em reconhecimento facial. Seu objetivo é eliminar o processo manual de registro de presença, tornando-o mais eficiente, seguro e confiável para professores, alunos e gestores acadêmicos.
+O ClassFace é um sistema de chamada automática para salas de aula que utiliza reconhecimento facial para registrar a presença dos alunos. O objetivo é modernizar o controle de presença acadêmico, garantindo mais segurança, agilidade e transparência no processo. O sistema é composto por um aplicativo mobile integrado a dispositivos IoT e a um banco de dados baseado em Big Data.
 
-## 2. Objetivos
+1.2 Objetivo do Documento
 
-O ClassFace utiliza tecnologias de IoT, Big Data e Inteligência Artificial para automatizar o registro de presença.
+Esta documentação detalha as especificações técnicas, requisitos, funcionalidades e arquitetura do sistema ClassFace, servindo como referência para desenvolvedores, administradores de sistema e demais stakeholders.
 
-IoT (Internet das Coisas): Uso de câmeras inteligentes conectadas à rede para capturar imagens dos alunos no início da aula.
+## 2. Tecnologias Utilizadas
 
-Big Data: Armazenamento e processamento dos registros de presença em um banco de dados centralizado, permitindo análises de padrões de comparecimento.
+O sistema ClassFace utiliza as seguintes tecnologias:
 
-Inteligência Artificial: Reconhecimento facial baseado em machine learning para identificação precisa dos alunos e prevenção de fraudes.
+Linguagens: Python, JavaScript (React Native, Node.js)
 
-O sistema será integrado a um portal acadêmico que permitirá aos professores e gestores acessar relatórios de presença automaticamente gerados.
+Frameworks e Bibliotecas: OpenCV, TensorFlow, Express.js
 
-## 3. Especificações
+Banco de Dados: PostgreSQL, Firebase (para sincronização em tempo real)
 
-3.1 Público-Alvo
+Serviços de Nuvem: AWS ou Google Cloud
 
-Professores: Facilidade e rapidez no registro de presença sem necessidade de chamadas manuais.
+Hardware: Câmeras IoT compatíveis com protocolo de transmissão em rede
 
-Alunos: Um sistema justo e confiável, eliminando a necessidade de listas de chamada em papel e prevenindo fraudes.
+Mobile: React Native para desenvolvimento do aplicativo
 
-Gestores Acadêmicos: Relatórios detalhados sobre a frequência dos alunos, permitindo melhor gestão acadêmica e identificação de padrões de evasão.
+## 3. Arquitetura do Sistema
 
-3.2 Funcionalidades Principais
+O ClassFace segue uma arquitetura baseada em microserviços e comunicação entre dispositivos IoT, mobile e servidores em nuvem.
 
-Captura Automática de Imagens
+3.1 Backend
 
-Uso de câmeras IoT para registrar a presença dos alunos no início da aula.
+Responsável pelo processamento das imagens capturadas pelas câmeras.
 
-Reconhecimento Facial com IA
+Utiliza Python com TensorFlow para reconhecimento facial.
 
-Identificação dos alunos com base em imagens previamente cadastradas no sistema.
+API REST desenvolvida em Node.js e Express.js.
 
-Verificação automática de matrícula na disciplina.
+Banco de dados PostgreSQL para armazenamento dos registros de presença.
 
-Armazenamento e Processamento de Dados
+Firebase para sincronização de dados em tempo real entre dispositivos móveis e backend.
 
-Registros de presença armazenados em banco de dados seguro.
+3.2 Frontend (Mobile)
 
-Acesso a histórico de frequência e geração de relatórios.
+Aplicativo mobile desenvolvido com React Native.
 
-Integração com Sistemas Acadêmicos
+Permite que professores e alunos acompanhem os registros de presença.
 
-Sincronização automática com sistemas de gestão acadêmica já existentes.
+Interface intuitiva para visualização de frequência e alertas de ausência.
 
-Possibilidade de exportação de relatórios em formatos compatíveis com as instituições de ensino.
+3.3 Dispositivos IoT
 
-## 4. Benefícios
+Câmeras conectadas ao sistema capturam imagens e transmitem os dados para processamento.
 
-4.1 Benefícios Gerais
+Comunicação via MQTT ou HTTP com o backend.
 
-Agilidade e Eficiência: Elimina chamadas manuais, economizando tempo em todas as aulas.
+## 4. Funcionalidades
 
-Segurança e Confiabilidade: O uso de reconhecimento facial impede fraudes na presença.
+4.1 Registro Automático de Presença
 
-Automatização Completa: Integração com sistemas acadêmicos para atualização automática dos registros.
+Captura imagens dos alunos e identifica suas presenças automaticamente.
 
-4.2 Benefícios na Resolução do Problema
+4.2 Integração com Sistemas Acadêmicos
 
-Redução do Tempo Perdido: Professores iniciam suas aulas imediatamente, sem interrupções.
+Sincroniza os registros de presença com os sistemas institucionais existentes.
 
-Controle e Análise de Frequência: Possibilita monitoramento acadêmico detalhado.
+4.3 Relatórios e Painel de Controle
 
-Maior Transparência: Processo automatizado e sem possibilidade de manipulação.
+Professores e gestores podem acessar históricos detalhados de presença por meio do aplicativo móvel.
 
-Facilidade de Implementação: Integração com câmeras de segurança já instaladas nas instituições.
+Geração de gráficos e análises preditivas baseadas em Big Data.
 
-## 5. Marcos do Projeto
+4.4 Notificações e Alertas
 
-Fase
+O aplicativo mobile envia notificações automáticas para alunos, professores e responsáveis em caso de faltas frequentes.
 
-Descrição
+## 5. Requisitos
 
-Planejamento
+5.1 Requisitos Funcionais
 
-Definição de requisitos, escopo e tecnologias utilizadas
+O sistema deve permitir o reconhecimento facial dos alunos.
 
-Desenvolvimento
+O sistema deve armazenar e exibir históricos de presença.
 
-Implementação do reconhecimento facial e integração com sistemas acadêmicos
+O sistema deve possibilitar a integração com plataformas acadêmicas.
 
-Testes
+O aplicativo deve fornecer relatórios e notificações sobre a frequência dos alunos.
 
-Validação do reconhecimento facial e precisão dos registros de presença
+5.2 Requisitos Não Funcionais
 
-Implementação
+Alta disponibilidade e escalabilidade.
 
-Integração em ambientes acadêmicos para uso real
+Segurança dos dados com criptografia.
 
-Monitoramento
+Suporte para múltiplas câmeras simultaneamente.
 
-Avaliação de desempenho e ajustes necessários
-## 6. Conclusão
-
-O ClassFace representa uma solução inovadora e eficiente para o controle de presença acadêmica. A utilização de IoT, Big Data e IA garante maior segurança, automação e transparência, beneficiando alunos, professores e gestores acadêmicos. Com uma implementação simples e integração com sistemas já existentes, o ClassFace é uma alternativa viável para modernizar a gestão da frequência em salas de aula.
+Sincronização em tempo real com dispositivos móveis.
