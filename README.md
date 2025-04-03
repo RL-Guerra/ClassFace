@@ -1,12 +1,12 @@
-Documentação do Software ClassFace
+# Documentação do Software ClassFace
 
-1. Introdução
+## 1. Introdução
 
 1.1 Visão Geral
 
 O ClassFace é um sistema de chamada automática para salas de aula baseado em reconhecimento facial. Seu objetivo é eliminar o processo manual de registro de presença, tornando-o mais eficiente, seguro e confiável para professores, alunos e gestores acadêmicos.
 
-2. Objetivos
+## 2. Objetivos
 
 O ClassFace utiliza tecnologias de IoT, Big Data e Inteligência Artificial para automatizar o registro de presença.
 
@@ -18,7 +18,7 @@ Inteligência Artificial: Reconhecimento facial baseado em machine learning para
 
 O sistema será integrado a um portal acadêmico que permitirá aos professores e gestores acessar relatórios de presença automaticamente gerados.
 
-3. Especificações
+## 3. Especificações
 
 3.1 Público-Alvo
 
@@ -52,7 +52,7 @@ Sincronização automática com sistemas de gestão acadêmica já existentes.
 
 Possibilidade de exportação de relatórios em formatos compatíveis com as instituições de ensino.
 
-4. Benefícios
+## 4. Benefícios
 
 4.1 Benefícios Gerais
 
@@ -72,7 +72,7 @@ Maior Transparência: Processo automatizado e sem possibilidade de manipulação
 
 Facilidade de Implementação: Integração com câmeras de segurança já instaladas nas instituições.
 
-5. Marcos do Projeto
+## 5. Marcos do Projeto
 
 Fase
 
@@ -97,6 +97,6 @@ Integração em ambientes acadêmicos para uso real
 Monitoramento
 
 Avaliação de desempenho e ajustes necessários
-6. Conclusão
+## 6. Conclusão
 
 O ClassFace representa uma solução inovadora e eficiente para o controle de presença acadêmica. A utilização de IoT, Big Data e IA garante maior segurança, automação e transparência, beneficiando alunos, professores e gestores acadêmicos. Com uma implementação simples e integração com sistemas já existentes, o ClassFace é uma alternativa viável para modernizar a gestão da frequência em salas de aula.
